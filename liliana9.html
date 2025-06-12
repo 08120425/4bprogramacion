@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/piye-kek" rel="stylesheet"></nav>
+    <title>Liliana lizbeth</title> </head><body>
+<nav class="navbar navbar-light" style="background-color: rgb(247, 10, 128);">
+  <div class="container">
+    <a class="navbar-brand" href="index.html" style="color:white;">INICIO</a>
+  <div class="collaspe navbar-collaspe" id="navbarNavDropdown"><ul class="nav navbar-nav"><li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="index.html" href="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false" style="color: white;">unidad 1</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="http://localhost/tienda/Grupo4BProg/lili1.php/index.html">practica1</a><br>
+          <a class="dropdown-item" href="http://localhost/tienda/Grupo4BProg/lili2.php/index.html">practica2</a><br>
+          <a class="dropdown-item" href="http://localhost/tienda/Grupo4BProg/lili3.php/index.html">practica3</a></div></li></ul><ul class="nav navbar-nav"><li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="index.html" href="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" style="color: white;">unidad 2</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="http://localhost/tienda/Grupo4BProg/lili4.php/index.html">practica4</a><br>
+                  <a class="dropdown-item" href="http://localhost/tienda/Grupo4BProg/lizbeth.php/index.html">Practica de tienda</a><br>
+                  <a class="dropdown-item" href="http://localhost/tienda/Grupo4BProg/lili5.php/index.html">practica5</a><br>
+                  <a class="dropdown-item" href="http://localhost/tienda/Grupo4BProg/lili5a.php/index.html">Practica 5a</a><br>
+                  <a class="dropdown-item" href="http://localhost/tienda/Grupo4BProg/liliana6.html">Pokemon</a><br>
+                  <a class="dropdown-item" href="http://localhost/tienda/Grupo4BProg/proyecto1.php/index.html">Proyecto primavera</a><br>
+                  <a class="dropdown-item" href="http://localhost/tienda/Grupo4BProg/personajes.php">Personajes</a></li></ul><ul class="nav navbar-nav"><li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" href="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" style="color: white;">unidad 3</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="http://localhost/tienda/Grupo4BProg/liliana7.html">practica7</a><br>
+                          <a class="dropdown-item" href="http://localhost/tienda/Grupo4BProg/liliana8.html">practica8</a><br>
+                          <a class="dropdown-item" href="http://localhost/tienda/Grupo4BProg/liliana9.html">practica9</a><br></li></ul></div></div></div></nav>
+    <title>Personajes</title>
+    <style>
+     :root{
+        --color-primario: #bb26a7;
+        --color-secundario:#f8068b;
+        --color-terceario:#f9f9fa;
+        --color-cuarto:#5f485f;
+        --color-quinto:#7B9E87;
+     }
+     * {
+        box-sizing: border-box;
+     }
+     body{
+        background-color: var(--color-primario);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0;
+     }
+     header{
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-secundario);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        margin-bottom: 30px;
+     }
+     #form, #form2 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+     }
+     .search{
+        background-color: var(--color-primario);
+        border: 2px solid var(--color-terceario);
+        border-radius: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        padding: 8px 15px;
+        color: var(--color-terceario);
+     }
+     .search::placeholder{
+        color: var(--color-terceario);  
+     }
+     .search:focus{
+        outline: none;
+        background-color: var(--color-quinto);
+     }
+     .contenedor-seccion {
+        margin-bottom: 60px;
+     }
+     .titulo-seccion {
+        color: var(--color-terceario);
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 2em;
+        letter-spacing: 2px;
+     }
+     .main-personajes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+     .personaje{
+        width: 400px;
+        margin: 15px;
+        background: var(--color-secundario);
+        box-shadow: 10px 15px 1px var(--color-cuarto);
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+     }
+     .personaje img {
+        width: 80%;
+        height: 400px;
+        object-fit: contain;
+     }
+     .personaje-info{
+        color: var(--color-terceario);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 15px 15px 15px;
+        letter-spacing: 5px;
+     }
+     .personaje-info h3{
+        color: var(--color-terceario);
+        margin: 0;
+     }
+    .personaje-info h1{
+        color: var(--color-primario);
+        margin-top: 0;
+    }
+    .description {
+        background-color: var(--color-quinto);
+        padding: 15px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        max-height: 100%;
+        transform: translateY(101%);
+        overflow-y:  auto;
+        transition: transform 0.3s ease-in;
+    }
+    .personaje:hover .description {
+        transform: translateY(0);
+    }
+    .btn-ir-ricky {
+        display: block;
+        margin: 0 auto 20px auto;
+        padding: 10px 30px;
+        background: var(--color-cuarto);
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+    .btn-ir-ricky:hover {
+        background: #447a9c;
+    }
+    </style>
+</head>
+<body>
+   
+    <div class="contenedor-seccion">
+        <div class="titulo-seccion">Harry Potter</div>
+        <form id="form" autocomplete="off">
+            <img src="H.webp" alt="logo" style="width: 80px;">
+            <input type="text" id="search" class="search" placeholder="Buscar Personaje">
+        </form>
+        <button class="btn-ir-ricky" id="btnIrRicky" type="button">Ir a Rick and Morty</button>
+        <main id="main" class="main-personajes"></main>
+    </div>
+
+    <div class="contenedor-seccion" id="rickSection">
+        <div class="titulo-seccion">Rick and Morty</div>
+        <form id="form2" autocomplete="off">
+            <img src="R.jpeg" alt="logo" style="width: 120px;">
+            <input type="text" id="search2" class="search" placeholder="Buscar Personaje">
+        </form>
+        <main id="main2" class="main-personajes"></main>
+    </div>
+
+<script>
+const API_URL = 'https://hp-api.onrender.com/api/characters';
+const main = document.getElementById('main');
+const form = document.getElementById('form');
+const search = document.getElementById('search');
+
+let allCharacters = [];
+
+getCharacters(API_URL);
+
+async function getCharacters(url) {
+    try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error('Error en la API');
+        const data = await res.json();
+        allCharacters = data;
+        showCharacters(allCharacters);
+    } catch (error) {
+        main.innerHTML = '<p style="color:red;">No se pudieron cargar los personajes.</p>';
+    }
+}
+
+function showCharacters(characters) {
+    main.innerHTML = '';
+    characters.forEach((char) => {
+        const { name, alternate_names, species, gender, house, image } = char;
+        const characterElement = document.createElement('div');
+        characterElement.classList.add('personaje');
+        characterElement.innerHTML = `
+            <img src="${image}" alt="${name}">
+            <div class="personaje-info">
+                <h3>${name}</h3>
+                <span>${alternate_names && alternate_names.length > 0 ? alternate_names.join(', ') : ''}</span>
+            </div>
+            <div class="description">
+                <p><strong>Especie:</strong> ${species || '-'}</p>
+                <p><strong>Género:</strong> ${gender || '-'}</p>
+                <p><strong>Casa:</strong> ${house || '-'}</p>
+            </div>`;
+        main.appendChild(characterElement);
+    });
+}
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const searchTerm = search.value.trim().toLowerCase();
+    if (searchTerm && searchTerm !== '') {
+        const filtered = allCharacters.filter(char =>
+            char.name.toLowerCase().includes(searchTerm)
+        );
+        showCharacters(filtered);
+    } else {
+        showCharacters(allCharacters);
+    }
+});
+document.getElementById('btnIrRicky').addEventListener('click', function() {
+    document.getElementById('rickSection').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+
+<script>
+const API_URL2 = 'https://rickandmortyapi.com/api/character';
+const main2 = document.getElementById('main2');
+const form2 = document.getElementById('form2');
+const search2 = document.getElementById('search2');
+
+let allCharacters2 = [];
+
+getCharacters2(API_URL2);
+
+async function getCharacters2(url) {
+    try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error('Error en la API');
+        const data = await res.json();
+        allCharacters2 = data.results; 
+        showCharacters2(allCharacters2);
+    } catch (error) {
+        main2.innerHTML = '<p style="color:red;">No se pudieron cargar los personajes.</p>';
+    }
+}
+
+function showCharacters2(characters) {
+    main2.innerHTML = '';
+    characters.forEach((char) => {
+        const { name, status, species, type, gender, image } = char;
+        const characterElement = document.createElement('div');
+        characterElement.classList.add('personaje');
+        characterElement.innerHTML = `
+            <img src="${image}" alt="${name}">
+            <div class="personaje-info">
+                <h3>${name}</h3>
+                <span>${species || ''}</span>
+            </div>
+            <div class="description">
+                <p><strong>Status:</strong> ${status || '-'}</p>
+                <p><strong>Tipo:</strong> ${type || '-'}</p>
+                <p><strong>Género:</strong> ${gender || '-'}</p>
+            </div>`;
+        main2.appendChild(characterElement);
+    });
+}
+
+form2.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const searchTerm = search2.value.trim().toLowerCase();
+    if (searchTerm && searchTerm !== '') {
+        const filtered = allCharacters2.filter(char =>
+            char.name.toLowerCase().includes(searchTerm)
+        );
+        showCharacters2(filtered);
+    } else {
+        showCharacters2(allCharacters2);
+    }
+});
+</script>
+</body>
+</html>
